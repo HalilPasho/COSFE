@@ -1,0 +1,14 @@
+.checkbox-label {
+  padding: 0 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-label > label {
+  margin: 10px;
+}
+
+.checkbox-label > label > input {
+  margin: 5px;
+}

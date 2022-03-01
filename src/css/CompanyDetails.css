@@ -1,0 +1,33 @@
+.company-container {
+  border-bottom: 1px solid grey;
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+
+.specialities {
+  font-size: 1.2em;
+}
+
+.company-name {
+  font-size: 0.9em;
+  padding: 20px 0;
+}
+
+.highlight {
+  font-weight: bold;
+  color: aquamarine;
+  text-transform: uppercase;
+}
+
+.main-company-text {
+  flex: auto;
+}
+
+.company-name-prefix {
+  font-weight: 600;
+  padding-right: 15px;
+  font-size: 16px;
+}
