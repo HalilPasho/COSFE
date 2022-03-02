@@ -1,10 +1,11 @@
 export interface SearchBarProps {
-    onSearchSubmit: (str: string) => void;
+    onSearchSubmit: (str?: any, spec?: any) => void;
     clearResults: () => void;
-  }
+}
 
-export interface QuoteProps {
-    anime: string;
-    character: string;
-    quote: string;
-  }
+export type Companies = {
+    name: string;
+    logo: string;
+    specialities: string;
+    city: string;
+}

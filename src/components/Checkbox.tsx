@@ -1,14 +1,20 @@
 import "../css/Checkbox.css";
-const Checkbox = (props: any) => {
+const Checkbox = (props: {
+  companySpecialities: string[];
+  checkedValues: any[];
+  setCheckedValues: (arg0: any) => void;
+  onSearchSubmit: (arg0: string, arg1: any) => void;
+}) => {
   const handleChecked = (e: any) => {
-    const hero = props.companySpecialities[e.target.dataset.id];
+    const specialities = props.companySpecialities[e.target.dataset.id];
     let newCheckedValues = props.checkedValues.filter(
-      (item: any) => item !== hero
+      (item: any) => item !== specialities
     );
-    if (e.target.checked) newCheckedValues.push(hero);
+    if (e.target.checked) newCheckedValues.push(specialities);
     props.setCheckedValues(newCheckedValues);
+    props.onSearchSubmit("", newCheckedValues);
   };
-  console.log(props.checkedValues);
+
   return (
     <div className="checkbox-label">
       {props.companySpecialities.map((speciality: string, id: number) => (

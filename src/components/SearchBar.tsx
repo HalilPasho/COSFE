@@ -15,7 +15,7 @@ const SearchBar: FC<SearchBarProps> = ({ onSearchSubmit, clearResults }) => {
   // submit a new search
   useEffect(() => {
     if (term !== "") {
-      onSearchSubmit(term);
+      onSearchSubmit(term, "");
     } else {
       clearResults();
     }

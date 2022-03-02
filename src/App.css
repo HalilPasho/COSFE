@@ -15,7 +15,7 @@
 }
 
 .disclaimer-container {
-  padding: 5% 5% 0 5%;
+  padding: 5% 5% 1% 5%;
 }
 
 .no-results {
@@ -34,5 +34,8 @@
 @media only screen and (max-width: 880px) {
   .app {
     width: 90%;
+  }
+  .main-content {
+    padding: 0;
   }
 }

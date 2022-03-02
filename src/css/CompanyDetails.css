@@ -31,3 +31,12 @@
   padding-right: 15px;
   font-size: 16px;
 }
+
+@media only screen and (max-width: 880px) {
+  .company-container {
+    justify-content: unset;
+  }
+  .company-container > img {
+    width: 100px;
+  }
+}
